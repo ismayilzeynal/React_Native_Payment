@@ -2,10 +2,9 @@ import React from "react";
 import { Image, ImageBackground, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
 
 
-
-function App() {
+function Home(){
     return (
-        <View style={styles.Card}>
+        <>
             <View style={styles.nav}>
                 <Image
                     style={styles.backButton}
@@ -95,179 +94,169 @@ function App() {
                     <Text style={styles.submitButtonText}>Use this card</Text>
                 </TouchableOpacity>
             </View>
-        </View>
+        </>
     );
 }
-export default App;
+
+export default Home;
 
 
-const styles = StyleSheet.create({
-    Card: {
-        flex: 1,
-        paddingLeft: 24,
-        paddingRight: 24,
-        paddingTop: 31
-    },
+const styles = StyleSheet.create(
+    {
+        nav: {
+            flex: 0.1,
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center"
+        },
 
-    nav: {
-        flex: 0.1,
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "center"
-    },
+        backButton: {
+            width: 42,
+            height: 42
+        },
 
-    backButton: {
-        width: 42,
-        height: 42
-    },
-
-    navText: {
-        fontSize: 22,
-        fontWeight: 'bold',
-        color: "#07122A",
-        marginLeft: 22
-    },
+        navText: {
+            fontSize: 22,
+            fontWeight: 'bold',
+            color: "#07122A",
+            marginLeft: 22
+        },
 
 
 
 
-    // Card Image section
-    cardImageSec: {
-        flex: 0.5,
-        marginTop: 31,
-        borderRadius: 8,
-        overflow: 'hidden'
-    },
+        // Card Image section
+        cardImageSec: {
+            flex: 0.5,
+            marginTop: 31,
+            borderRadius: 8,
+            overflow: 'hidden'
+        },
 
-    cardImage: {
-        flex: 1,
-        resizeMode: 'cover',
-        display: "flex",
-        flexDirection: "row",
-        alignContent: "flex-end",
-        justifyContent: "center",
-        flexWrap: "wrap",
-        padding: 24
-    },
+        cardImage: {
+            flex: 1,
+            resizeMode: 'cover',
+            display: "flex",
+            flexDirection: "row",
+            alignContent: "flex-end",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            padding: 24
+        },
 
-    cardImageNumber: {
-        fontSize: 26,
-        fontWeight: "normal",
-        color: "white",
-        letterSpacing: 1,
-        marginBottom: 45
-    },
+        cardImageNumber: {
+            fontSize: 26,
+            fontWeight: "normal",
+            color: "white",
+            letterSpacing: 1,
+            marginBottom: 45
+        },
 
-    cardImageText: {
-        fontSize: 20,
-        fontWeight: "normal",
-        color: "white"
-    },
+        cardImageText: {
+            fontSize: 20,
+            fontWeight: "normal",
+            color: "white"
+        },
 
-    cardImageTextArea: {
-        width: "100%",
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "space-between"
-    },
+        cardImageTextArea: {
+            width: "100%",
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between"
+        },
 
 
 
 
 
-    // Card Info
-    cardInfoForm: {
-        flex: 1,
-        marginTop: 25,
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-        alignItems: "center"
-    },
+        // Card Info
+        cardInfoForm: {
+            flex: 1,
+            marginTop: 25,
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "space-between",
+            alignItems: "center"
+        },
 
-    photoIcon: {
-        width: 34,
-        height: 29
-    },
+        photoIcon: {
+            width: 34,
+            height: 29
+        },
 
-    cardInfoInput: {
-        width: "100%",
-        display: "flex",
-        flexWrap: "wrap"
-    },
+        cardInfoInput: {
+            width: "100%",
+            display: "flex",
+            flexWrap: "wrap"
+        },
 
-    InputLabelText: {
-        color: "#8698A8",
-        fontSize: 14,
-        lineHeight: 22
-    },
+        InputLabelText: {
+            color: "#8698A8",
+            fontSize: 14,
+            lineHeight: 22
+        },
 
-    FullInput: {
-        width: "100%",
-        borderRadius: 8,
-        borderWidth: 1,
-        borderColor: '#8698A8',
-        padding: 10,
-        fontSize: 17,
-        fontWeight: "bold"
-    },
+        FullInput: {
+            width: "100%",
+            borderRadius: 8,
+            borderWidth: 1,
+            borderColor: '#8698A8',
+            padding: 10,
+            fontSize: 17,
+            fontWeight: "bold"
+        },
 
-    cardInfoInputDivided: {
-        width: "100%",
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "space-between"
-    },
+        cardInfoInputDivided: {
+            width: "100%",
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between"
+        },
 
-    halfWidthInput: {
-        width: "47%",
-    },
+        halfWidthInput: {
+            width: "47%",
+        },
 
-    cardInputIcon: {
-        width: 31.5,
-        height: 26
+        cardInputIcon: {
+            width: 31.5,
+            height: 26
 
-    },
+        },
 
-    inputWithIcon: {
-        flexDirection: 'row',
-        alignItems: 'center',
-        borderWidth: 1,
-        borderColor: '#8698A8',
-        borderRadius: 8,
-        paddingHorizontal: 10,
-    },
+        inputWithIcon: {
+            flexDirection: 'row',
+            alignItems: 'center',
+            borderWidth: 1,
+            borderColor: '#8698A8',
+            borderRadius: 8,
+            paddingHorizontal: 10,
+        },
 
-    inputCVC: {
-        flex: 1,
-        fontSize: 17,
-        fontWeight: "bold"
-    },
+        inputCVC: {
+            flex: 1,
+            fontSize: 17,
+            fontWeight: "bold"
+        },
 
-    submitButton: {
-        width: "100%",
-        backgroundColor: "#07122A",
-        borderRadius: 8,
-        padding: 20,
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "center",
-        marginBottom: 20
-    },
-    submitButtonText: {
-        fontSize: 17,
-        fontWeight: "bold",
-        color: "white"
-    }
+        submitButton: {
+            width: "100%",
+            backgroundColor: "#07122A",
+            borderRadius: 8,
+            padding: 20,
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            marginBottom: 20
+        },
+        submitButtonText: {
+            fontSize: 17,
+            fontWeight: "bold",
+            color: "white"
+        }
 
 
 
 
 
 
-
-
-
-
-
-});
+    });
