@@ -1,15 +1,17 @@
 import React from "react";
 import { Image, ImageBackground, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
+import BackIcon from "../icons/Back.svg"
+import CardIcon from "../icons/CardIcon.svg"
+import PhotoIcon from "../icons/PhotoIcon.svg"
+
+
 
 
 function Home(){
     return (
         <>
             <View style={styles.nav}>
-                <Image
-                    style={styles.backButton}
-                    source={require('../assets/images/arrow-left.png')}
-                />
+                <BackIcon style={styles.backButton} />
                 <Text style={styles.navText}>Credit / Debit Card</Text>
             </View>
 
@@ -36,10 +38,7 @@ function Home(){
 
 
             <View style={styles.cardInfoForm}>
-                <Image
-                    style={styles.photoIcon}
-                    source={require('../assets/images/Photo.png')}
-                />
+                <PhotoIcon style={styles.photoIcon}/>
 
                 <View style={styles.cardInfoInput}>
                     <Text style={styles.InputLabelText}>
@@ -85,7 +84,7 @@ function Home(){
                                 defaultValue={"474"}
                                 placeholder="000"
                             />
-                            <Image source={require('../assets/images/icon.png')} style={styles.cardInputIcon} />
+                            <CardIcon style={styles.cardInputIcon}/>
                         </View>
                     </View>
                 </View>
@@ -154,6 +153,7 @@ const styles = StyleSheet.create(
 
         cardImageText: {
             fontSize: 20,
+            lineHeight: 20,
             fontWeight: "normal",
             color: "white"
         },
